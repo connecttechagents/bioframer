@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="te">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="మీ పంటకు సరైన పరిష్కారం – నేరుగా నిపుణుల నుండి | Right solution for your crop – directly from experts">
+    <title>కృషి సలహాదారు | Farmer Advisor</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body lang="te">
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div>
+                <div class="logo">
+                    <span class="logo-icon">🌾</span>
+                    <div>
+                        <div data-lang-te="కృషి సలహాదారు" data-lang-hi="कृषि सलाहकार" data-lang-en="Farmer Advisor"
+                            class="lang-text">కృషి సలహాదారు</div>
+                        <div class="tagline">
+                            <span data-lang-te="మీ పంటకు సరైన పరిష్కారం" data-lang-hi="आपकी फसल के लिए सही समाधान"
+                                data-lang-en="Right solution for your crop" class="lang-text">మీ పంటకు సరైన
+                                పరిష్కారం</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="te">తె</button>
+                <button class="lang-btn" data-lang="hi">हि</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                <span data-lang-te="మీ విశ్వసనీయ వ్యవసాయ సలహాదారు" data-lang-hi="आपका विश्वसनीय कृषि सलाहकार"
+                    data-lang-en="Your Trusted Agriculture Advisor" class="lang-text">మీ విశ్వసనీయ వ్యవసాయ
+                    సలహాదారు</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span data-lang-te="పంట సమస్యలకు తక్షణ పరిష్కారాలు మరియు నిపుణుల సలహా"
+                    data-lang-hi="फसल की समस्याओं के लिए त्वरित समाधान और विशेषज्ञ सलाह"
+                    data-lang-en="Instant solutions and expert advice for crop problems" class="lang-text">పంట సమస్యలకు
+                    తక్షణ పరిష్కారాలు మరియు నిపుణుల సలహా</span>
+            </p>
+
+            <div class="hero-actions">
+                <a href="crop-detail.html" class="btn btn-primary btn-large">
+                    <span class="btn-icon">🌱</span>
+                    <span data-lang-te="నా పంట ఎంచుకోండి" data-lang-hi="मेरी फसल चुनें" data-lang-en="Choose My Crop"
+                        class="lang-text">నా పంట ఎంచుకోండి</span>
+                </a>
+                <a href="problem-finder.html" class="btn btn-secondary btn-large">
+                    <span class="btn-icon">🦠</span>
+                    <span data-lang-te="పంట సమస్య ఉందా?" data-lang-hi="फसल की समस्या है?" data-lang-en="Crop Problem?"
+                        class="lang-text">పంట సమస్య ఉందా?</span>
+                </a>
+                <a href="contact-expert.html" class="btn btn-accent btn-large">
+                    <span class="btn-icon">📞</span>
+                    <span data-lang-te="నిపుణుడితో మాట్లాడండి" data-lang-hi="विशेषज्ञ से बात करें"
+                        data-lang-en="Talk to Expert" class="lang-text">నిపుణుడితో మాట్లాడండి</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crop Selection -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">
+                <span data-lang-te="మీ పంట ఎంచుకోండి" data-lang-hi="अपनी फसल चुनें" data-lang-en="Choose Your Crop"
+                    class="lang-text">మీ పంట ఎంచుకోండి</span>
+            </h2>
+            <div class="crop-grid">
+                <div class="crop-card" onclick="selectCrop('banana')">
+                    <img src="images/banana.png" alt="Banana" class="crop-icon"
+                        style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+                    <div class="crop-name">
+                        <span data-lang-te="అరటి" data-lang-hi="केला" data-lang-en="Banana"
+                            class="lang-text">అరటి</span>
+                    </div>
+                </div>
+                <div class="crop-card" onclick="selectCrop('mango')">
+                    <img src="images/mango.png" alt="Mango" class="crop-icon"
+                        style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+                    <div class="crop-name">
+                        <span data-lang-te="మామిడి" data-lang-hi="आम" data-lang-en="Mango"
+                            class="lang-text">మామిడి</span>
+                    </div>
+                </div>
+                <div class="crop-card" onclick="selectCrop('grapes')">
+                    <img src="images/grapes.png" alt="Grapes" class="crop-icon"
+                        style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+                    <div class="crop-name">
+                        <span data-lang-te="ద్రాక్ష" data-lang-hi="अंगूर" data-lang-en="Grapes"
+                            class="lang-text">ద్రాక్ష</span>
+                    </div>
+                </div>
+                <div class="crop-card" onclick="selectCrop('citrus')">
+                    <img src="images/citrus.png" alt="Citrus" class="crop-icon"
+                        style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+                    <div class="crop-name">
+                        <span data-lang-te="నిమ్మ పండ్లు" data-lang-hi="नींबू फल" data-lang-en="Citrus"
+                            class="lang-text">నిమ్మ పండ్లు</span>
+                    </div>
+                </div>
+                <div class="crop-card" onclick="selectCrop('pomegranate')">
+                    <img src="images/pomegranate.png" alt="Pomegranate" class="crop-icon"
+                        style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+                    <div class="crop-name">
+                        <span data-lang-te="దానిమ్మ" data-lang-hi="अनार" data-lang-en="Pomegranate"
+                            class="lang-text">దానిమ్మ</span>
+                    </div>
+                </div>
+                <div class="crop-card" onclick="selectCrop('chilli')">
+                    <img src="images/chilli.png" alt="Chilli" class="crop-icon"
+                        style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+                    <div class="crop-name">
+                        <span data-lang-te="మిర్చి" data-lang-hi="मिर्च" data-lang-en="Chilli"
+                            class="lang-text">మిర్చి</span>
+                    </div>
+                </div>
+                <div class="crop-card" onclick="selectCrop('tomato')">
+                    <img src="images/tomato.png" alt="Tomato" class="crop-icon"
+                        style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+                    <div class="crop-name">
+                        <span data-lang-te="టమాటో" data-lang-hi="टमाटर" data-lang-en="Tomato"
+                            class="lang-text">టమాటో</span>
+                    </div>
+                </div>
+                <div class="crop-card" onclick="selectCrop('cotton')">
+                    <img src="images/cotton.png" alt="Cotton" class="crop-icon"
+                        style="width: 100%; height: 120px; object-fit: cover; border-radius: 8px;">
+                    <div class="crop-name">
+                        <span data-lang-te="పత్తి" data-lang-hi="कपास" data-lang-en="Cotton"
+                            class="lang-text">పత్తి</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Explanation -->
+    <section class="section" style="background-color: var(--color-bg-white);">
+        <div class="container">
+            <div class="audio-player">
+                <button class="audio-btn" onclick="playAudio('intro')">
+                    <span>▶</span>
+                </button>
+                <div class="audio-info">
+                    <div class="audio-title">
+                        <span data-lang-te="ఈ వెబ్‌సైట్ ఎలా ఉపయోగించాలో వినండి"
+                            data-lang-hi="इस वेबसाइट का उपयोग कैसे करें सुनें"
+                            data-lang-en="Listen how to use this website" class="lang-text">ఈ వెబ్‌సైట్ ఎలా ఉపయోగించాలో
+                            వినండి</span>
+                    </div>
+                    <div class="audio-duration">45 సెకన్లు</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Products -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-lg">
+                <span data-lang-te="అత్యధికంగా అమ్ముడైన ఉత్పత్తులు" data-lang-hi="सबसे अधिक बिकने वाले उत्पाद"
+                    data-lang-en="Top Selling Products" class="lang-text">అత్యధికంగా అమ్ముడైన ఉత్పత్తులు</span>
+            </h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div
+                        style="width: 100%; height: 200px; background: linear-gradient(135deg, #4CAF50, #8BC34A); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 64px; margin-bottom: 16px;">
+                        🌿</div>
+                    <h3 class="card-title">
+                        <span data-lang-te="బయో గ్రో ప్లస్" data-lang-hi="बायो ग्रो प्लस" data-lang-en="Bio Grow Plus"
+                            class="lang-text">బయో గ్రో ప్లస్</span>
+                    </h3>
+                    <p class="card-text">
+                        <span data-lang-te="10,000+ రైతులు ఉపయోగిస్తున్నారు"
+                            data-lang-hi="10,000+ किसान उपयोग कर रहे हैं" data-lang-en="Used by 10,000+ farmers"
+                            class="lang-text">10,000+ రైతులు ఉపయోగిస్తున్నారు</span>
+                    </p>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 12px;">
+                        <span data-lang-te="ఎలా ఉపయోగించాలో తెలుసుకోండి" data-lang-hi="उपयोग कैसे करें जानें"
+                            data-lang-en="Know how to use" class="lang-text">ఎలా ఉపయోగించాలో తెలుసుకోండి</span>
+                    </button>
+                </div>
+                <div class="card">
+                    <div
+                        style="width: 100%; height: 200px; background: linear-gradient(135deg, #FFC107, #FFD54F); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 64px; margin-bottom: 16px;">
+                        🍃</div>
+                    <h3 class="card-title">
+                        <span data-lang-te="ఆర్గానిక్ బూస్ట్" data-lang-hi="ऑर्गेनिक बूस्ट" data-lang-en="Organic Boost"
+                            class="lang-text">ఆర్గానిక్ బూస్ట్</span>
+                    </h3>
+                    <p class="card-text">
+                        <span data-lang-te="అన్ని పంటలకు అనుకూలం" data-lang-hi="सभी फसलों के लिए उपयुक्त"
+                            data-lang-en="Suitable for all crops" class="lang-text">అన్ని పంటలకు అనుకూలం</span>
+                    </p>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 12px;">
+                        <span data-lang-te="ఎలా ఉపయోగించాలో తెలుసుకోండి" data-lang-hi="उपयोग कैसे करें जानें"
+                            data-lang-en="Know how to use" class="lang-text">ఎలా ఉపయోగించాలో తెలుసుకోండి</span>
+                    </button>
+                </div>
+                <div class="card">
+                    <div
+                        style="width: 100%; height: 200px; background: linear-gradient(135deg, #66BB6A, #81C784); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 64px; margin-bottom: 16px;">
+                        🌾</div>
+                    <h3 class="card-title">
+                        <span data-lang-te="క్రాప్ ప్రొటెక్ట్" data-lang-hi="क्रॉप प्रोटेक्ट"
+                            data-lang-en="Crop Protect" class="lang-text">క్రాప్ ప్రొటెక్ట్</span>
+                    </h3>
+                    <p class="card-text">
+                        <span data-lang-te="వ్याధుల నుండి రక్షణ" data-lang-hi="रोगों से सुरक्षा"
+                            data-lang-en="Protection from diseases" class="lang-text">వ్याధుల నుండి రక్షణ</span>
+                    </p>
+                    <button class="btn btn-outline" style="width: 100%; margin-top: 12px;">
+                        <span data-lang-te="ఎలా ఉపయోగించాలో తెలుసుకోండి" data-lang-hi="उपयोग कैसे करें जानें"
+                            data-lang-en="Know how to use" class="lang-text">ఎలా ఉపయోగించాలో తెలుసుకోండి</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="section" style="background-color: var(--color-bg-white);">
+        <div class="container">
+            <h2 class="text-center mb-lg">
+                <span data-lang-te="విజయ కథలు" data-lang-hi="सफलता की कहानियां" data-lang-en="Success Stories"
+                    class="lang-text">విజయ కథలు</span>
+            </h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <div
+                        style="width: 100%; height: 200px; background: linear-gradient(135deg, #E8F5E9, #C8E6C9); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 80px; margin-bottom: 16px;">
+                        👨‍🌾</div>
+                    <h3 class="card-title">
+                        <span data-lang-te="రామారావు గారు, గుంటూరు" data-lang-hi="रामाराव जी, गुंटूर"
+                            data-lang-en="Ramarao, Guntur" class="lang-text">రామారావు గారు, గుంటూరు</span>
+                    </h3>
+                    <p class="card-text">
+                        <span data-lang-te="బయో గ్రో ప్లస్ వాడి నా మిర్చి పంటలో 40% దిగుబడి పెరిగింది"
+                            data-lang-hi="बायो ग्रो प्लस का उपयोग करके मेरी मिर्च की फसल में 40% उपज बढ़ी"
+                            data-lang-en="Using Bio Grow Plus increased my chilli yield by 40%" class="lang-text">బయో
+                            గ్రో ప్లస్ వాడి నా మిర్చి పంటలో 40% దిగుబడి పెరిగింది</span>
+                    </p>
+                    <button class="audio-btn" style="margin-top: 12px;">
+                        <span>▶</span>
+                    </button>
+                </div>
+                <div class="card">
+                    <div
+                        style="width: 100%; height: 200px; background: linear-gradient(135deg, #E8F5E9, #C8E6C9); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 80px; margin-bottom: 16px;">
+                        👨‍🌾</div>
+                    <h3 class="card-title">
+                        <span data-lang-te="వెంకటేష్ గారు, కృష్ణా" data-lang-hi="वेंकटेश जी, कृष्णा"
+                            data-lang-en="Venkatesh, Krishna" class="lang-text">వెంకటేష్ గారు, కృష్ణా</span>
+                    </h3>
+                    <p class="card-text">
+                        <span data-lang-te="నా అరటి పంటలో ఆకుల కర్ల్ సమస్య పూర్తిగా తొలగింది"
+                            data-lang-hi="मेरे केले की फसल में पत्तियों की कर्ल समस्या पूरी तरह से ठीक हो गई"
+                            data-lang-en="Leaf curl problem in my banana crop completely resolved" class="lang-text">నా
+                            అరటి పంటలో ఆకుల కర్ల్ సమస్య పూర్తిగా తొలగింది</span>
+                    </p>
+                    <button class="audio-btn" style="margin-top: 12px;">
+                        <span>▶</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-lg">
+                <span data-lang-te="తరచుగా అడిగే ప్రశ్నలు" data-lang-hi="अक्सर पूछे जाने वाले प्रश्न"
+                    data-lang-en="Frequently Asked Questions" class="lang-text">తరచుగా అడిగే ప్రశ్నలు</span>
+            </h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <h4>
+                        <span data-lang-te="ఎప్పుడు వాడాలి?" data-lang-hi="कब उपयोग करें?" data-lang-en="When to use?"
+                            class="lang-text">ఎప్పుడు వాడాలి?</span>
+                    </h4>
+                    <p class="card-text">
+                        <span data-lang-te="పువ్వు వచ్చే దశలో మరియు పండ్ల అభివృద్ధి దశలో ఉపయోగించండి"
+                            data-lang-hi="फूल आने के चरण और फल विकास चरण में उपयोग करें"
+                            data-lang-en="Use during flowering stage and fruit development stage"
+                            class="lang-text">పువ్వు వచ్చే దశలో మరియు పండ్ల అభివృద్ధి దశలో ఉపయోగించండి</span>
+                    </p>
+                    <button class="audio-btn">
+                        <span>▶</span>
+                    </button>
+                </div>
+                <div class="card">
+                    <h4>
+                        <span data-lang-te="రసాయన ఎరువులతో కలపవచ్చా?"
+                            data-lang-hi="रासायनिक उर्वरकों के साथ मिला सकते हैं?"
+                            data-lang-en="Can mix with chemical fertilizers?" class="lang-text">రసాయన ఎరువులతో
+                            కలపవచ్చా?</span>
+                    </h4>
+                    <p class="card-text">
+                        <span data-lang-te="అవును, కానీ వేరు వేరు సమయాల్లో వాడండి. 7 రోజుల గ్యాప్ ఉంచండి"
+                            data-lang-hi="हां, लेकिन अलग-अलग समय पर उपयोग करें। 7 दिनों का अंतर रखें"
+                            data-lang-en="Yes, but use at different times. Keep 7 days gap" class="lang-text">అవును,
+                            కానీ వేరు వేరు సమయాల్లో వాడండి. 7 రోజుల గ్యాప్ ఉంచండి</span>
+                    </p>
+                    <button class="audio-btn">
+                        <span>▶</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>
+                        <span data-lang-te="సంప్రదించండి" data-lang-hi="संपर्क करें" data-lang-en="Contact Us"
+                            class="lang-text">సంప్రదించండి</span>
+                    </h3>
+                    <ul class="footer-links">
+                        <li>📞 +91 99854 86645</li>
+                        <li>✉️ connecttechagents@gmail.com</li>
+                        <li>📍 Bangalore</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>
+                        <span data-lang-te="లింక్స్" data-lang-hi="लिंक" data-lang-en="Links"
+                            class="lang-text">లింక్స్</span>
+                    </h3>
+                    <ul class="footer-links">
+                        <li><a href="crop-detail.html">
+                                <span data-lang-te="పంటలు" data-lang-hi="फसलें" data-lang-en="Crops"
+                                    class="lang-text">పంటలు</span>
+                            </a></li>
+                        <li><a href="problem-finder.html">
+                                <span data-lang-te="సమస్య పరిష్కారం" data-lang-hi="समस्या समाधान"
+                                    data-lang-en="Problem Solver" class="lang-text">సమస్య పరిష్కారం</span>
+                            </a></li>
+                        <li><a href="contact-expert.html">
+                                <span data-lang-te="నిపుణులు" data-lang-hi="विशेषज्ञ" data-lang-en="Experts"
+                                    class="lang-text">నిపుణులు</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>
+                        <span data-lang-te="మాతో కనెక్ట్ అవ్వండి" data-lang-hi="हमसे जुड़ें"
+                            data-lang-en="Connect With Us" class="lang-text">మాతో కనెక్ట్ అవ్వండి</span>
+                    </h3>
+                    <p>
+                        <span data-lang-te="WhatsApp ద్వారా నవీకరణలు పొందండి"
+                            data-lang-hi="WhatsApp के माध्यम से अपडेट प्राप्त करें"
+                            data-lang-en="Get updates via WhatsApp" class="lang-text">WhatsApp ద్వారా నవీకరణలు
+                            పొందండి</span>
+                    </p>
+                    <button class="btn btn-accent" style="margin-top: 12px;">
+                        <span>💬</span>
+                        <span data-lang-te="WhatsApp లో చేరండి" data-lang-hi="WhatsApp में शामिल हों"
+                            data-lang-en="Join on WhatsApp" class="lang-text">WhatsApp లో చేరండి</span>
+                    </button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span data-lang-te="కృషి సలహాదారు. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి."
+                        data-lang-hi="कृषि सलाहकार। सर्वाधिकार सुरक्षित।"
+                        data-lang-en="Farmer Advisor. All rights reserved." class="lang-text">కృషి సలహాదారు. అన్ని
+                        హక్కులు రిజర్వ్ చేయబడ్డాయి.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919985486645?text=నా%20పంట%20సమస్యకు%20సహాయం%20కావాలి" class="whatsapp-float"
+        target="_blank">
+        <span class="whatsapp-icon">💬</span>
+    </a>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="te">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>నిపుణుడితో సంప్రదించండి | Contact Expert</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body lang="te">
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div>
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🌾</span>
+                    <div>
+                        <div data-lang-te="కృషి సలహాదారు" data-lang-hi="कृषि सलाहकार" data-lang-en="Farmer Advisor"
+                            class="lang-text">కృషి సలహాదారు</div>
+                    </div>
+                </a>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="te">తె</button>
+                <button class="lang-btn" data-lang="hi">हि</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                <span data-lang-te="నిపుణుడితో మాట్లాడండి" data-lang-hi="विशेषज्ञ से बात करें"
+                    data-lang-en="Talk to Expert" class="lang-text">నిపుణుడితో మాట్లాడండి</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span data-lang-te="మీ పంట సమస్యకు వ్యక్తిగత సలహా పొందండి"
+                    data-lang-hi="अपनी फसल की समस्या के लिए व्यक्तिगत सलाह प्राप्त करें"
+                    data-lang-en="Get personalized advice for your crop problem" class="lang-text">మీ పంట సమస్యకు
+                    వ్యక్తిగత సలహా పొందండి</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Audio Guide -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="audio-player">
+                <button class="audio-btn">
+                    <span>▶</span>
+                </button>
+                <div class="audio-info">
+                    <div class="audio-title">
+                        <span data-lang-te="ఫారమ్ ఎలా పూరించాలో వినండి" data-lang-hi="फॉर्म कैसे भरें सुनें"
+                            data-lang-en="Listen how to fill the form" class="lang-text">ఫారమ్ ఎలా పూరించాలో
+                            వినండి</span>
+                    </div>
+                    <div class="audio-duration">25 సెకన్లు</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto;">
+                <div class="card" style="padding: var(--space-xl);">
+                    <h2 class="mb-lg text-center">
+                        <span data-lang-te="మీ వివరాలు పంపండి" data-lang-hi="अपना विवरण भेजें"
+                            data-lang-en="Send Your Details" class="lang-text">మీ వివరాలు పంపండి</span>
+                    </h2>
+
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span data-lang-te="పేరు *" data-lang-hi="नाम *" data-lang-en="Name *"
+                                    class="lang-text">పేరు *</span>
+                            </label>
+                            <input type="text" name="name" class="form-input" required placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span data-lang-te="గ్రామం" data-lang-hi="गांव" data-lang-en="Village"
+                                    class="lang-text">గ్రామం</span>
+                            </label>
+                            <input type="text" name="village" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span data-lang-te="మొబైల్ నంబర్ *" data-lang-hi="मोबाइल नंबर *"
+                                    data-lang-en="Mobile Number *" class="lang-text">మొబైల్ నంబర్ *</span>
+                            </label>
+                            <input type="tel" name="mobile" class="form-input" required placeholder="+91">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span data-lang-te="పంట పేరు *" data-lang-hi="फसल का नाम *" data-lang-en="Crop Name *"
+                                    class="lang-text">పంట పేరు *</span>
+                            </label>
+                            <select name="crop" class="form-select" required>
+                                <option value="">
+                                    <span data-lang-te="ఎంచుకోండి" data-lang-hi="चुनें" data-lang-en="Select"
+                                        class="lang-text">ఎంచుకోండి</span>
+                                </option>
+                                <option value="banana" data-lang-te="అరటి" data-lang-hi="केला" data-lang-en="Banana">
+                                    అరటి</option>
+                                <option value="mango" data-lang-te="మామిడి" data-lang-hi="आम" data-lang-en="Mango">
+                                    మామిడి</option>
+                                <option value="grapes" data-lang-te="ద్రాక్ష" data-lang-hi="अंगूर"
+                                    data-lang-en="Grapes">ద్రాక్ష</option>
+                                <option value="citrus" data-lang-te="నిమ్మ పండ్లు" data-lang-hi="नींबू फल"
+                                    data-lang-en="Citrus">నిమ్మ పండ్లు</option>
+                                <option value="pomegranate" data-lang-te="దానిమ్మ" data-lang-hi="अनार"
+                                    data-lang-en="Pomegranate">దానిమ్మ</option>
+                                <option value="chilli" data-lang-te="మిర్చి" data-lang-hi="मिर्च" data-lang-en="Chilli">
+                                    మిర్చి</option>
+                                <option value="tomato" data-lang-te="టమాటో" data-lang-hi="टमाटर" data-lang-en="Tomato">
+                                    టమాటో</option>
+                                <option value="cotton" data-lang-te="పత్తి" data-lang-hi="कपास" data-lang-en="Cotton">
+                                    పత్తి</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span data-lang-te="మీ సమస్య వివరించండి" data-lang-hi="अपनी समस्या बताएं"
+                                    data-lang-en="Describe Your Problem" class="lang-text">మీ సమస్య వివరించండి</span>
+                            </label>
+                            <textarea name="problem" class="form-textarea" rows="5"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span data-lang-te="సమస్య ఫోటో అప్‌లోడ్ చేయండి (ఐచ్ఛికం)"
+                                    data-lang-hi="समस्या की फोटो अपलोड करें (वैकल्पिक)"
+                                    data-lang-en="Upload Problem Photo (Optional)" class="lang-text">సమస్య ఫోటో అప్‌లోడ్
+                                    చేయండి (ఐచ్ఛికం)</span>
+                            </label>
+                            <div class="file-upload" onclick="document.getElementById('file-input').click()">
+                                <div class="file-upload-icon">📷</div>
+                                <div class="file-upload-text">
+                                    <span data-lang-te="ఫోటో ఎంచుకోండి లేదా ఇక్కడ డ్రాగ్ చేయండి"
+                                        data-lang-hi="फोटो चुनें या यहां ड्रैग करें"
+                                        data-lang-en="Choose photo or drag here" class="lang-text">ఫోటో ఎంచుకోండి లేదా
+                                        ఇక్కడ డ్రాగ్ చేయండి</span>
+                                </div>
+                                <input type="file" id="file-input" name="photo" accept="image/*" style="display: none;">
+                            </div>
+                            <div id="image-preview"></div>
+                        </div>
+
+                        <div
+                            style="background-color: var(--color-bg-light); padding: var(--space-md); border-radius: var(--border-radius-md); margin-bottom: var(--space-lg);">
+                            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted); margin: 0;">
+                                <strong>
+                                    <span data-lang-te="గోప్యత హామీ:" data-lang-hi="गोपनीयता आश्वासन:"
+                                        data-lang-en="Privacy Assurance:" class="lang-text">గోప్యత హామీ:</span>
+                                </strong><br>
+                                <span
+                                    data-lang-te="మీ సమాచారం పూర్తిగా సురక్షితం. మేము మీకు కొత్త ఉత్పత్తుల సమాచారం మరియు సలహా పంపడానికి మాత్రమే ఉపయోగిస్తాము."
+                                    data-lang-hi="आपकी जानकारी पूरी तरह से सुरक्षित है। हम केवल नए उत्पाद की जानकारी और सलाह भेजने के लिए उपयोग करेंगे।"
+                                    data-lang-en="Your information is completely secure. We will only use it to send you new product information and advice."
+                                    class="lang-text">మీ సమాచారం పూర్తిగా సురక్షితం. మేము మీకు కొత్త ఉత్పత్తుల సమాచారం
+                                    మరియు సలహా పంపడానికి మాత్రమే ఉపయోగిస్తాము.</span>
+                            </p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                            <span>📤</span>
+                            <span data-lang-te="పంపండి" data-lang-hi="भेजें" data-lang-en="Submit"
+                                class="lang-text">పంపండి</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative Contact Methods -->
+    <section class="section" style="background-color: var(--color-bg-white);">
+        <div class="container">
+            <h2 class="text-center mb-lg">
+                <span data-lang-te="ఇతర సంప్రదింపు మార్గాలు" data-lang-hi="अन्य संपर्क विधियां"
+                    data-lang-en="Other Contact Methods" class="lang-text">ఇతర సంప్రదింపు మార్గాలు</span>
+            </h2>
+
+            <div class="grid grid-3">
+                <div class="card text-center">
+                    <div style="font-size: 64px; margin-bottom: var(--space-md);">📞</div>
+                    <h3 class="card-title">
+                        <span data-lang-te="ఫోన్ కాల్" data-lang-hi="फोन कॉल" data-lang-en="Phone Call"
+                            class="lang-text">ఫోన్ కాల్</span>
+                    </h3>
+                    <p class="card-text">+91 99854 86645</p>
+                    <p class="card-text">
+                        <span data-lang-te="సోమ - శని: 9 AM - 6 PM" data-lang-hi="सोम - शनि: 9 AM - 6 PM"
+                            data-lang-en="Mon - Sat: 9 AM - 6 PM" class="lang-text">సోమ - శని: 9 AM - 6 PM</span>
+                    </p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="font-size: 64px; margin-bottom: var(--space-md);">💬</div>
+                    <h3 class="card-title">WhatsApp</h3>
+                    <p class="card-text">
+                        <span data-lang-te="తక్షణ సమాధానం" data-lang-hi="तत्काल उत्तर" data-lang-en="Instant Response"
+                            class="lang-text">తక్షణ సమాధానం</span>
+                    </p>
+                    <a href="https://wa.me/919985486645?text=నా%20పంట%20సమస్యకు%20సహాయం%20కావాలి" class="btn btn-accent"
+                        style="margin-top: 12px;" target="_blank">
+                        <span data-lang-te="సందేశం పంపండి" data-lang-hi="संदेश भेजें" data-lang-en="Send Message"
+                            class="lang-text">సందేశం పంపండి</span>
+                    </a>
+                </div>
+
+                <div class="card text-center">
+                    <div style="font-size: 64px; margin-bottom: var(--space-md);">✉️</div>
+                    <h3 class="card-title">
+                        <span data-lang-te="ఇమెయిల్" data-lang-hi="ईमेल" data-lang-en="Email"
+                            class="lang-text">ఇమెయిల్</span>
+                    </h3>
+                    <p class="card-text">connecttechagents@gmail.com</p>
+                    <p class="card-text">
+                        <span data-lang-te="24 గంటల్లో సమాధానం" data-lang-hi="24 घंटे में उत्तर"
+                            data-lang-en="Response in 24 hours" class="lang-text">24 గంటల్లో సమాధానం</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="section">
+        <div class="container">
+            <div class="card"
+                style="background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); color: white; text-align: center; padding: var(--space-2xl);">
+                <h2 style="color: white; margin-bottom: var(--space-lg);">
+                    <span data-lang-te="10,000+ రైతులు మాపై నమ్మకం ఉంచారు"
+                        data-lang-hi="10,000+ किसानों ने हम पर भरोसा किया" data-lang-en="10,000+ Farmers Trust Us"
+                        class="lang-text">10,000+ రైతులు మాపై నమ్మకం ఉంచారు</span>
+                </h2>
+                <div style="display: flex; justify-content: center; gap: var(--space-2xl); flex-wrap: wrap;">
+                    <div>
+                        <div style="font-size: var(--font-size-3xl); font-weight: 700;">95%</div>
+                        <div>
+                            <span data-lang-te="సంతృప్తి రేటు" data-lang-hi="संतुष्टि दर"
+                                data-lang-en="Satisfaction Rate" class="lang-text">సంతృప్తి రేటు</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size: var(--font-size-3xl); font-weight: 700;">24/7</div>
+                        <div>
+                            <span data-lang-te="WhatsApp మద్దతు" data-lang-hi="WhatsApp समर्थन"
+                                data-lang-en="WhatsApp Support" class="lang-text">WhatsApp మద్దతు</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="font-size: var(--font-size-3xl); font-weight: 700;">100%</div>
+                        <div>
+                            <span data-lang-te="ఉచిత సలహా" data-lang-hi="मुफ्त सलाह" data-lang-en="Free Advice"
+                                class="lang-text">ఉచిత సలహా</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span data-lang-te="కృషి సలహాదారు" data-lang-hi="कृषि सलाहकार"
+                        data-lang-en="Farmer Advisor" class="lang-text">కృషి సలహాదారు</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919985486645?text=నా%20పంట%20సమస్యకు%20సహాయం%20కావాలి" class="whatsapp-float"
+        target="_blank">
+        <span class="whatsapp-icon">💬</span>
+    </a>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
